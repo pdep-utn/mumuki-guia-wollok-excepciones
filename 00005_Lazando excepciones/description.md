@@ -27,4 +27,4 @@ object cuentaOrigen {
 }
 ```
 
-Mediante la sentencia `error.throwWithMessage(mensaje)` lo que hicimos fue _lanzar una excepción_: provocar un error explícito que _interrumpe_ el flujo del programa
+Mediante la sentencia `error.throwWithMessage(mensaje)` lo que hicimos fue _lanzar una excepción_: provocar un error explícito que _interrumpe_ el flujo del programa. 
