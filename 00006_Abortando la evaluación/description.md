@@ -1,0 +1,3 @@
+Cuando lanzamos una excepción mediante `error.throwWithMessage(mensaje)` estamos abortando la evaluación del método: a partir de ese momento todas las sentencias que faltaba evaluar serán ignoradas, incluyendo los `return`. Por eso es que en el ejemplo anterior ni siquiera se llega a devolver el objeto `4`.
+
+> Veamos si va quedando claro: modifiquemos a `pepita` para que en caso de no poder volar, no falle silenciosamente sino que lance una excepción. El mensaje debe ser `"No tengo suficiente energía"` `
