@@ -26,4 +26,4 @@ object transferencia {
 
 A esto nos referiamos cuando decíamos que las excepciones interrupen el flujo del programa :sunglasses:.
 
-> Veamos si se entiende: agregá al objeto `transferencia` un método `deshacer` se exactamente al revés del `realizar`: debe revertir la transferencia, moviendo el monto de la cuenta destino a la de origen.  
+> Veamos si se entiende: agregá al objeto `transferencia` un método `deshacer` que sea exactamente al revés del `realizar`: debe revertir la transferencia, moviendo el monto de la cuenta destino a la de origen. 
