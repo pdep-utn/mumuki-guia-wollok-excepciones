@@ -1,8 +1,8 @@
 ---
 tags: []
-layout: editor_bottom
+layout: editor_right
 type: problem
-extra_visible: false
+extra_visible: true
 language: 
 teacher_info: ''
 manual_evaluation: false

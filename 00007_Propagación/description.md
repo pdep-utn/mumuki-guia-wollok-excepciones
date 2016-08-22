@@ -26,9 +26,4 @@ object transferencia {
 
 A esto nos referiamos cuando decíamos que las excepciones interrupen el flujo del programa :sunglasses:.
 
-> Veamos si queda claro: `carlos` es un ornitólogo que investiga el comportamiento de `pepita`, y como parte de su estudio la hace `comerAlpise(10)`, `volarEnCirculos()`  dos veces y finalmente `comerAlpise(10)`. 
-> 
-> Queremos que `carlos` entienda un mensaje `estudiarPepita()` que le haga hacer su rutina, y que lance con una excepción si `pepita.volarEnCirculos()` la lanza.
-> 
-> Escribí el código necesario y pensá si es necesario hacer algo especial para que la excepción que lanza `pepita` se propague
-
+> Veamos si se entiende: agregá al objeto `transferencia` un método `deshacer` se exactamente al revés del `realizar`: debe revertir la transferencia, moviendo el monto de la cuenta destino a la de origen.  
