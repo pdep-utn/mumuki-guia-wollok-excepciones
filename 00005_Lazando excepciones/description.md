@@ -20,7 +20,7 @@ object cuentaOrigen {
   var saldo = 20
   method debitar(monto) {
     if (monto > saldo) {
-      error.throwWithMessage("No se puede debitar, porque el monto $"+monto+" es mayor al saldo $" +saldo+")
+      error.throwWithMessage("No se puede debitar, porque el monto $"+monto+" es mayor al saldo $" +saldo)
     }
     saldo -= monto
   }
