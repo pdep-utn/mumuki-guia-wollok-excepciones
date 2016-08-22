@@ -1,4 +1,4 @@
-¿Interesante no? No solamente tuvimos un mensaje de error claro que nos permite entender qué sucedió, sino que además evitó que se deposite dinero en la cuenta de destino. :smile:. ¿Cómo fue esto posible?
+¿Interesante, no? No solamente tuvimos un mensaje de error claro que nos permite entender qué sucedió, sino que además evitó que se deposite dinero en la cuenta de destino. :smile:. ¿Cómo fue esto posible?
 
 La primera versión del código de `cuentaOrigen` se veía aproximadamente así: 
 
