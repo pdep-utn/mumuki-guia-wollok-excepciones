@@ -1,7 +1,7 @@
 object pepita {
   var energia = 50
   
-  method comerAlpise(cantidad) {
+  method comerAlpiste(cantidad) {
     energia += cantidad * 2
   }
   
