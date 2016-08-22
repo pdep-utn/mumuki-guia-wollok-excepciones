@@ -1,4 +1,4 @@
-Que los objetos _fallen silenciosamente_es malo porque perdemos la confianza en ellos :broken_heart:: ya no estamos seguros de que al enviar el mensaje realmente el objeto cumplió con nuestra órden. 
+Que los objetos _fallen silenciosamente_ es malo porque perdemos la confianza en ellos :broken_heart:: ya no estamos seguros de que al enviar el mensaje realmente el objeto cumplió con nuestra órden. 
 
 Esto no parerce tan terrible cuando hablamos del vuelo de las golondrinas, pero ¿qué pasa si estamos haciendo una transferencia bancaria? 
 
