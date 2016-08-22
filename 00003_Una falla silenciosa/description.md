@@ -4,7 +4,7 @@ Y esto es malo, porque perdemos la confianza en los objetos: ya no estamos segur
 
 ```wollok
 object transferencia {
-   //algunos atributos...
+   var monto = 40
    method realizar() {
       cuentaOrigen.debitar(monto)
       cuentaDestino.depositar(monto)
@@ -14,5 +14,5 @@ object transferencia {
 
 > ¿Qué sucedería si `debitar` **no** debitara de la cuenta origen cuando no tiene saldo? ¡Probalo!
 > 
-> Tené en cuenta que `cuentaOrigen` y `cuentaDestino` entienden el mensaje `saldo`
+> Asumí que `cuentaOrigen` y `cuentaDestino` entienden el mensaje `saldo`
 
