@@ -28,3 +28,18 @@ object cuentaOrigen {
 ```
 
 Mediante la sentencia `error.throwWithMessage(mensaje)` lo que hicimos fue _lanzar una excepción_: provocar un error explícito que _interrumpe_ el flujo del programa. 
+
+> ¡Mas despacio cerebrito! Probá enviar `mensajeRaro` a `objetoRaro` (que ya cargamos por vos) en la consola...
+> 
+> ```
+> object objetoRaro {
+>    method mensajeRaro() {
+>       error.throwWithMessage("foo")
+>       return 4
+>    } 
+> }
+> ```
+> 
+> ...y pensá: ¿se retorna el 4? ¿Por qué?
+
+
