@@ -1,2 +1,9 @@
-//escribí lo necesario acá. 
-//asumí que pepita ya existe (mirá la solapa de código adicional)
+object transferencia {
+   var monto = 40
+   method realizar() {
+      cuentaOrigen.debitar(monto)
+      cuentaDestino.depositar(monto)
+   }
+   
+   //completar acá...
+}
