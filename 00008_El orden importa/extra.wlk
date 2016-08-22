@@ -18,5 +18,6 @@ object barcoPirata {
 object ciudad {
   method puedeHacerleFrenteA(barco) {
     eventos.ocurrir("puedeHacerFrente")
+    return true
   }
 }
