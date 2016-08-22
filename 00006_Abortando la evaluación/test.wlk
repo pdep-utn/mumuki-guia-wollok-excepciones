@@ -11,19 +11,9 @@ test "si pepita vuela dos veces, consume 40" {
   assert.equals(10, pepita.energia())
 }
 
-test "si le pedimos a pepita que vuele 3 veces, lanza una excepción" {
+test "si le pedimos a pepita que vuele 3 veces, lanza una excepción y consume sólo 10" {
   2.times { pepita.volarEnCirculos() }
   assert.throwsExceptionLike(new Exception("No tengo suficiente energía"), { pepita.volarEnCirculos() })
-}
-
-
-test "si le pedimos a pepita que vuele 10 veces, consume sólo 40" {
-  10.times { 
-    try {
-      pepita.volarEnCirculos()
-    } catch e : Exception {
-      //nada
-    }
-  }
   assert.equals(10, pepita.energia())
 }
+
