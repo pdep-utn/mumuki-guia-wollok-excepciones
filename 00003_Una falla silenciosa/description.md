@@ -1,4 +1,4 @@
-Que los objetos _fallen silenciosamente_, porque perdemos la confianza en los objetos: ya no estamos seguros si al enviar el mensaje realmente el objeto cumplió con nuestra órden. Esto no parerce tan terrible cuando hablamos del vuelo de las golondrinas, pero ¿qué pasa si estamos haciendo una transferencia bancaria? 
+Que los objetos _fallen silenciosamente_es malo porque perdemos la confianza en ellos: ya no estamos seguros si al enviar el mensaje realmente el objeto cumplió con nuestra órden. Esto no parerce tan terrible cuando hablamos del vuelo de las golondrinas, pero ¿qué pasa si estamos haciendo una transferencia bancaria? 
 
 ```wollok
 object transferencia {
