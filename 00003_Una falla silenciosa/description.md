@@ -12,7 +12,9 @@ object transferencia {
 }
 ```
 
-> ¿Qué sucedería si `debitar` **no** debitara de la cuenta origen cuando no tiene saldo? ¡Probalo!
-> 
+¿Qué sucedería si realizamos la transferencia y `debitar` **no** debitara de la cuenta origen cuando no tiene saldo?
+
+> ¡Descubrilo! Haciendo consultas en la consola, averiguá con cuanto dinero comienzan y terminan las cuentas origen y destino. 
+>
 > Asumí que `cuentaOrigen` y `cuentaDestino` entienden el mensaje `saldo`
 
