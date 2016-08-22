@@ -4,4 +4,8 @@ object pepita {
   method volarEnCirculos() {
     energia -= 20
   }
+  
+  method energia() {
+    return energia
+  }
 }

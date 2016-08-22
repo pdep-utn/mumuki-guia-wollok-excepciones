@@ -17,4 +17,4 @@ Si bien es fácil de entender, ésto está claramente mal: la energía de `pepit
 >   picnic.preparar()
 > ```
 > 
-> Sabiendo esto, modificá 
+> Sabiendo esto, modificá el método `volarEnCirculos` para que sólo vuele (pierda energía) si puede. 
