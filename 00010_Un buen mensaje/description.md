@@ -5,4 +5,4 @@ Es bastante evidente que cuando lanzás una excepción tenés que darle un _mens
 
 Por ese motivo, siempre procurá lanzar excepciones con mensajes de error descriptivos.  
 
-> Veamos si queda claro: éste código tienen un problema relativo al manejo de excepciones. ¡Corregilo! 
+> Veamos si queda claro: este código tienen un problema relativo al manejo de excepciones. ¡Corregilo! 
