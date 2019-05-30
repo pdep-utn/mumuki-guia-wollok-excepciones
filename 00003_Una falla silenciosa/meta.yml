@@ -1,10 +1,9 @@
 ---
 tags: []
 layout: input_right
-editor: code
+editor: 0
 type: playground
 extra_visible: true
-language: 
-teacher_info: ''
 manual_evaluation: false
 choices: []
+name: Una falla silenciosa

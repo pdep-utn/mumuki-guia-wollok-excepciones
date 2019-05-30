@@ -12,6 +12,6 @@ test "si pepita vuela dos veces, consume 40" {
 }
 
 test "si le pedimos a pepita que vuele 10 veces, consume solo 40" {
-  10.times { pepita.volarEnCirculos() }
+  10.times { n => pepita.volarEnCirculos() }
   assert.equals(10, pepita.energia())
 }
