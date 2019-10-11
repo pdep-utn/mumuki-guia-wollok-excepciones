@@ -34,6 +34,7 @@ test "si al realizar la transferencia se puede debitar, se descuenta saldo de un
   const saldoDestinoInicial = cuentaDestino.saldo()
   
   transferencia.monto(cuentaOrigen.saldo())
+  transferencia.realizar()
   
   assert.equals(0, cuentaOrigen.saldo())
   assert.equals(saldoDestinoInicial + saldoOrigenInicial, cuentaDestino.saldo())
