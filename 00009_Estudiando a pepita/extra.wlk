@@ -7,7 +7,7 @@ object pepita {
   
   method volarEnCirculos() {
     if (energia < 20) {
-      error.throwWithMessage("pepita no tiene suficiente energía para volar")      
+      self.error("pepita no tiene suficiente energía para volar")      
     }
     energia -= 20
   }
