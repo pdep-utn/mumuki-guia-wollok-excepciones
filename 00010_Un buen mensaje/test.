@@ -10,7 +10,7 @@ test "pepita.comerAlpiste(-10) debería lanzar un mensaje de error expresivo" {
  try {
    pepita.comerAlpiste(-10)
  } catch e : Exception {
-   assert.that(["positiv", "negativ", "cantidad", "menor", "cero", "0", "-10"].any { it =>  e.getMessage().contains(it) })
+   assert.that(["positiv", "negativ", "cantidad", "menor", "cero", "0", "-10"].any { it =>  e.message().contains(it) })
  }
 }
 
