@@ -1,13 +1,23 @@
+const energiaQueGanaConCadaComida = 30
+const energiaQueGastaConCadaVuelo = 20
+
 test "existe carlos"  {
   carlos
 }
 
 test "carlos estudia a pepita" {
- carlos.estudiarPepita() 
+  const energiaInicial = pepita.energia()
+  
+  carlos.estudiarPepita() 
+  
+  assert.equals(
+    energiaInicial 
+      + energiaQueGanaConCadaComida * 2
+      + energiaQueGastaConCadaVuelo * 2,
+    pepita.energia())
 }
 
-test "si pepita tiene poca energía, estudia a pepita falla" {
- pepita.volarEnCirculos()
- pepita.volarEnCirculos()
- assert.throwsException({carlos.estudiarPepita()})
+test "si pepita tiene poca energía, estudiar a pepita falla" {
+  pepita.energia(1)
+  assert.throwsException({carlos.estudiarPepita()})
 }

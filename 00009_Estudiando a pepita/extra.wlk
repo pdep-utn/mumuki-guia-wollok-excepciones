@@ -1,8 +1,8 @@
 object pepita {
-  var energia = 50
+  var property energia = 50
   
   method comerAlpiste(cantidad) {
-    energia += cantidad * 2
+    energia += cantidad * 3
   }
   
   method volarEnCirculos() {
