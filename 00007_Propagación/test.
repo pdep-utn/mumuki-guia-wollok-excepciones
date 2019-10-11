@@ -28,3 +28,13 @@ test "si al realizar la transferencia no se puede debitar, ambas cuentas quedan 
   transferencia.monto(cuentaOrigen.saldo() + 10)
   assertSeMantienenLosSaldosIniciales.alFallarPor({ transferencia.realizar() })
 }
+
+test "si al realizar la transferencia se puede debitar, se descuenta saldo de una y se suma saldo a la otra"{
+  const saldoOrigenInicial = cuentaOrigen.saldo()
+  const saldoDestinoInicial = cuentaDestino.saldo()
+  
+  transferencia.monto(cuentaOrigen.saldo())
+  
+  assert.equals(0, cuentaOrigen.saldo())
+  assert.equals(saldoDestinoInicial + saldoOrigenInicial, cuentaDestino.saldo())
+}
