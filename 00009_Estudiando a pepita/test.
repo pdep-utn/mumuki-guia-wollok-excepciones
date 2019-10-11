@@ -13,7 +13,7 @@ test "carlos estudia a pepita" {
   assert.equals(
     energiaInicial 
       + energiaQueGanaConCadaComida * 2
-      + energiaQueGastaConCadaVuelo * 2,
+      - energiaQueGastaConCadaVuelo * 2,
     pepita.energia())
 }
 
