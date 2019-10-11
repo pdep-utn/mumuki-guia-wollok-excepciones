@@ -1,6 +1,6 @@
 object objetoRaro {
     method mensajeRaro() {
-       error.throwWithMessage("foo")
+       self.error("foo")
        return 4
     } 
 }

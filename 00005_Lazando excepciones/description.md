@@ -20,21 +20,21 @@ object cuentaOrigen {
   var saldo = 20
   method debitar(monto) {
     if (monto > saldo) {
-      error.throwWithMessage("No se puede debitar, porque el monto $"+monto+" es mayor al saldo $" +saldo)
+      self.error("No se puede debitar, porque el monto $"+monto+" es mayor al saldo $" +saldo)
     }
     saldo -= monto
   }
 }
 ```
 
-Mediante la sentencia `error.throwWithMessage(mensaje)` lo que hicimos fue _lanzar una excepción_: provocar un error explícito que _interrumpe_ el flujo del programa. 
+Mediante la sentencia `self.error(mensaje)` lo que hicimos fue _lanzar una excepción_: provocar un error explícito que _interrumpe_ el flujo del programa. 
 
 > ¡Mas despacio cerebrito! Probá enviar `mensajeRaro` a `objetoRaro` (que ya cargamos por vos) en la consola...
 > 
 > ```
 > object objetoRaro {
 >    method mensajeRaro() {
->       error.throwWithMessage("foo")
+>       self.error("foo")
 >       return 4
 >    } 
 > }
