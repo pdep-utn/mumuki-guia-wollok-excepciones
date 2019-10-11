@@ -19,5 +19,5 @@ test "si le pedimos a pepita que vuele 3 veces, lanza una excepción y consume s
 
 test "La excepción que se lanza tiene la descripción correcta" {
   2.times { n => pepita.volarEnCirculos() }
-  assert.throwsExceptionLike(new Exception("No tengo suficiente energía"), { pepita.volarEnCirculos() })
+  assert.throwsExceptionWithMessage("No tengo suficiente energía", { pepita.volarEnCirculos() })
 }
