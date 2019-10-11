@@ -1,9 +1,9 @@
 test "pepita.comerAlpiste(0) debería fallar" {
-  assert.throwsException({ it =>  pepita.comerAlpiste(0) })
+  assert.throwsException({ pepita.comerAlpiste(0) })
 }
 
 test "pepita.comerAlpiste(-10) debería fallar" {
-  assert.throwsException({ it =>  pepita.comerAlpiste(-10) })
+  assert.throwsException({ pepita.comerAlpiste(-10) })
 }
 
 test "pepita.comerAlpiste(-10) debería lanzar un mensaje de error expresivo" {
@@ -16,6 +16,7 @@ test "pepita.comerAlpiste(-10) debería lanzar un mensaje de error expresivo" {
 
 
 test "pepita.comerAlpiste(10) NO debería fallar" {
+  const energiaInicial = pepita.energia()
   pepita.comerAlpiste(10)
-  
+  assert.that(pepita.energia() > energiaInicial)
 }

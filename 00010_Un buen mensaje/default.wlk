@@ -1,5 +1,5 @@
 object pepita {
-  var energia = 50
+  var property energia = 50
   
   method comerAlpiste(cantidad) {
     if (cantidad <= 0) {
