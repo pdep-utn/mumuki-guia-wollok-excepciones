@@ -3,7 +3,7 @@ object saqueo {
     barcoPirata.prepararTripulacion()
     barcoPirata.desembarcarBarco(ciudad)
     if (ciudad.puedeHacerleFrenteA(barcoPirata)) {
-      error.throwWithMessage("No se puede invadir la ciudad")
+      self.error("No se puede invadir la ciudad")
     }
   }
 }

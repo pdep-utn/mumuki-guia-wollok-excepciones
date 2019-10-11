@@ -3,7 +3,7 @@ object pepita {
   
   method comerAlpiste(cantidad) {
     if (cantidad <= 0) {
-      error.throwWithMessage("error!")
+      self.error("error!")
     }
     energia += cantidad * 2
   }

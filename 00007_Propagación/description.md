@@ -6,7 +6,7 @@ Por ejemplo, si bien en el programa anterior `cuentaOrigen.debitar(monto)` era u
 object cuentaOrigen {
   method debitar(monto) {
     if (monto > saldo) {
-      error.throwWithMessage("...")
+      self.error("...")
     }
     saldo -= monto
   }
