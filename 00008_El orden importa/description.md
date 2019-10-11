@@ -5,4 +5,4 @@ Por eso, como regla práctica, siempre que querramos validar alguna situación, 
 * si vamos a cocinar, vamos a verificar que contemos con todos los ingredientes antes de prender las sartenes
 * si vamos a bailar, nos aseguraremos de que contemos con el calzado adecuado antes de entrar en la pista de baile
 
-> Veamos si queda claro: éste código tienen un problema relativo al manejo de excepciones. ¡Corregilo! 
+> Veamos si queda claro: sólo queremos que un saqueo se lleve adelante cuando la ciudad no puede hacerle frente a los piratas que van a saquearla. Este código tiene un problema relativo al manejo de excepciones. ¡Corregilo! 
