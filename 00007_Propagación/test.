@@ -1,3 +1,30 @@
-test "se puede deshacer" {
-  transferencia.deshacer()
+object assertSeMantienenLosSaldosIniciales {
+  method alEjecutar(bloque){
+    const saldoOrigenInicial = cuentaOrigen.saldo()
+    const saldoDestinoInicial = cuentaDestino.saldo()
+    
+    bloque.apply()
+    
+    assert.equals(saldoOrigenInicial, cuentaOrigen.saldo())
+    assert.equals(saldoDestinoInicial, cuentaDestino.saldo())
+  }
+  
+  method alFallarPor(bloque){
+    self.alEjecutar({
+      assert.throwsException(bloque)
+    })
+  }
+}
+test "deshacer una transferencia realizada deja con el mismo saldo inicial a ambas cuentas" {
+  transferencia.monto(cuentaOrigen.saldo())
+  
+  assertSeMantienenLosSaldosIniciales.alEjecutar({
+    transferencia.realizar()
+    transferencia.deshacer()
+  })
+}
+
+test "si al realizar la transferencia no se puede debitar, ambas cuentas quedan con su saldo inicial"{
+  transferencia.monto(cuentaOrigen.saldo() + 10)
+  assertSeMantienenLosSaldosIniciales.alFallarPor({ transferencia.realizar() })
 }
